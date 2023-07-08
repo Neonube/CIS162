@@ -5,8 +5,11 @@ html {
 }
 header {
     background: aqua;    
-    box-shadow: 0 0 10px rgba(0,180,80,0.5);
+    box-shadow: 5px 5px 5px 0px teal;
     padding: 0em 1em; 
+}
+nav{
+        box-shadow: 5px 5px 10px 0px rgba(180,180,0,0.5);
 }
 body {
     background: cornflowerblue;
@@ -17,8 +20,8 @@ body {
     line-height: 1.25;
     margin: auto;
     max-width: 800px;
-    padding: 1em 2em 2em 2em;
-    column-gap: 4px;
+    padding: 10px 24px 24px 24px;
+    /*column-gap: 40px;*/
    
 }/*
 body::after{
@@ -37,7 +40,6 @@ ul {
     width: inherit;
     text-align: center;
     overflow:hidden;
-    
 }
 li a{
     display:block;
@@ -62,21 +64,27 @@ li a.active{
 li:last-child{
     border-bottom: none;
 }
-lc{
-    clear: left;
-    float: left;
-    width: 55%;
-    padding: 5px;
-}
-rc{
-    float: left;
-    width: 40%;
-    padding: 5px;
-}
-bc{
+.full{
     clear:both;
     content: "";
     display: table;
+}
+.leftColumn{
+    clear: left;
+    float: left;
+    width: 55%;
+    padding: 0;
+    margin: 0;
+}
+.rightColumn{
+    float: left;
+    width: 40%;
+    padding: 0px;
+    margin: 0px;
+}
+.spacer{
+    float:left;
+    min-width: 5%;
 }
 /*footer::before{
 	clear:both;
@@ -86,8 +94,8 @@ bc{
 footer{
 	clear:both;
     background: aqua;
-    box-shadow: 0 0 10px rgba(0,180,80,0.5);
-    padding: 1px 10px 1px 10px; 
+    box-shadow: 5px 5px 5px 0px teal;
+    padding: 1px 5px 1px 10px; 
 }
 footer::after{
     clear: both;
